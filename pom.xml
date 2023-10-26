@@ -51,22 +51,32 @@
 <artifactId>maven-surefire-plugin</artifactId>
 <version>3.0.0-M4</version>
 <configuration>
-<!-- This is For TestNG maven Run -->
-<suiteXmlFiles>
-<!--<suiteXmlFile>testNG/childsupport.xml</suiteXmlFile>  -->
-<suiteXmlFiles> <!-- Need to pass testng.xml files as argument from command line --> 	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile> 
-</suiteXmlFiles>
+
  
+
+                    <!-- This is For Cucumber maven Run -->
+
+ 
+
+                      <includes>
+<!--     <include>**/testRunner*.java</include> -->
+</includes>
+
+ 
+
+                    
+<suiteXmlFiles>
+
+
+
 </suiteXmlFiles>
 </configuration>
 </plugin>
 </plugins>
-</build>  
-	  
+</build>
 
 	  
-	 
- 
+	
 
   
 </project>
